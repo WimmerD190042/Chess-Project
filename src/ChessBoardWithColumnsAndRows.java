@@ -1,8 +1,6 @@
-import java.awt.Color;
-import java.awt.GridLayout;
+import java.awt.*;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
+import javax.swing.*;
 
 public class ChessBoardWithColumnsAndRows extends JFrame {
 
@@ -40,6 +38,7 @@ public class ChessBoardWithColumnsAndRows extends JFrame {
 
         }
 
+
         this.setTitle(title); // Setting the title of board
         this.setLayout(new GridLayout(8, 18)); // GridLayout will arrange elements in Grid Manager 8 X 8
         this.setSize(650, 650); // Size of the chess board
@@ -49,8 +48,24 @@ public class ChessBoardWithColumnsAndRows extends JFrame {
 
     public static void main(String[] args) {
 
-        String title = "Schachbrett";
 
-        ChessBoardWithColumnsAndRows chessBoard = new ChessBoardWithColumnsAndRows(title); // Creating the instance of chess board
+
+        ChessBoardWithColumnsAndRows chessBoard = new ChessBoardWithColumnsAndRows("schachbrett"); // Creating the instance of chess board
+/*
+        JFrame f = new JFrame();
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        Container content = f.getContentPane();
+        content.setLayout(new BoxLayout(content, BoxLayout.PAGE_AXIS));
+
+        JFormattedTextField ipField= new JFormattedTextField(new IPAddressFormatter());
+        content.add(ipField);
+
+        content.add(new JTextField());
+        f.setSize(300, 100);
+        f.setVisible(true);*/
+        JFrame frame = new JFrame();
+        JTextField fn= new JTextField(20);
+
+        frame.add(fn);
     }
 }
