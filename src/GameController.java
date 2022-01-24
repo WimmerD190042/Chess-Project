@@ -14,6 +14,6 @@ public class GameController {
            ip.start();
 
            InetAddress ipAdress= InetAddress.getByName(ip.getIpAdress());
-        ServerSocket socket= new ServerSocket(1234,5, ipAdress);
+        ServerSocket socket= new ServerSocket(1234,1, ipAdress);
     }
 }
