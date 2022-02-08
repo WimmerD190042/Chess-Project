@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.net.Socket;
 
 public class IPInput {
+    public IPInput(){
+        start();
+    }
     public static String ipAdress ="";
 
     public void start(){
@@ -16,7 +19,7 @@ public class IPInput {
         frame.setSize(200,200);
         frame.setVisible(true);
 */
-        JFrame f=new JFrame("Button Example");
+        JFrame f=new JFrame("IP Input");
         //submit button
         JButton b=new JButton("Submit");
         b.setBounds(100,100,140, 40);
@@ -48,9 +51,8 @@ public class IPInput {
             @Override
             public void actionPerformed(ActionEvent arg0) {
                 label1.setText("IP has been submitted.");
-                setIpAdress(textfield.getText());
-                ChessBoardWithColumnsAndRows board = new ChessBoardWithColumnsAndRows("schach");
-
+               // setIpAdress(textfield.getText());
+                Board board= new Board();
             }
         });
 
@@ -58,9 +60,9 @@ public class IPInput {
 
     }
 
-    public static void setIpAdress(String ipAdress) {
+   /* public static void setIpAdress(String ipAdress) {
         GameController.ipAdress = ipAdress;
-    }
+    }*/
 
     public static String getIpAdress() {
         return ipAdress;
