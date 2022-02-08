@@ -19,4 +19,4 @@ Board        (GUI&Client, -> run-methode)(es wird zu Server kommuniziert)(Pieces
 
 
 Stundenverteilung: 
-https://docs.google.com/spreadsheets/d/1rFZV_BKsl_yU71FXM9OFrLjYwy2td3mW8aVa940KkZ4/edit#gid=0
+https://docs.google.com/spreadsheets/d/e/2PACX-1vRUBf3jaS3E1hNkI5eIhoqeqNaW074ERhWUmPnhf5wEHxMS2H1FcfjF8D7Fs43GjFK9-MvpyYpQCmKO/pubhtml
